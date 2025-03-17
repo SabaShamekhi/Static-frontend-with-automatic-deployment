@@ -24,3 +24,27 @@ html {
   font-size: 64px;
   margin-bottom: 60px;
 }
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.chef-image {
+  float: right;
+  border-radius: 50%;
+  width: 200px;
+  margin-left: 20px;
+}
+  
+.restaurant-image {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.hours {
+  display: flex;
+  justify-content: space-between;
+}
+  
+  
