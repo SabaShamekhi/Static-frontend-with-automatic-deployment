@@ -29,11 +29,52 @@ Learning about the principles and concepts of project version management and usi
 
 ```git commit -m "Fix login bug and update user validation"```
 
- ###Pull Request اتمی (Atomic Pull Request)
+ ### Pull Request اتمی (Atomic Pull Request)
 - یک PR باید فقط شامل تغییرات منطقی مرتبط با یکدیگر باشد.
 - روش اشتباه: یک PR که هم یک باگ را رفع کرده و هم یک قابلیت جدید اضافه می‌کند.
 - روش درست: برای رفع باگ و افزودن قابلیت جدید، PRهای جداگانه ایجاد کنید.
 پیش از merge، از squash کردن commitها با دستور git rebase -i استفاده می کنیم تا حالت اتمی حفظ شود.
+
+## ۳. تفاوت بین دستورات fetch، pull، merge، rebase و cherry-pick را توضیح دهید.
+### git fetch
+تغییرات را از مخزن remote دریافت می‌کند بدون ادغام آن‌ها با شاخه فعلی.
+ کاربرد: زمانی که می‌خواهیم قبل از ادغام، تغییرات را بررسی کنیم
+مثال:
+
+```git fetch origin```
+
+
+### git pull
+تغییرات را از مخزن remote دریافت و بلافاصله با شاخه فعلی ادغام می‌کند.
+ معادل با:
+
+```git fetch origin
+git merge origin/main```
+
+### git merge
+یک شاخه را با شاخه دیگر ادغام می‌کند و یک commit جدید برای ادغام ایجاد می‌شود.
+ مثال:
+
+```git merge feature-branch
+```
+
+### git rebase
+شاخه شما را به آخرین commit از شاخه‌ای دیگر منتقل می‌کندو مزیت آن این است که تاریخچه commitها را تمیزتر نگه می‌دارد بدون کامیت ادغام
+ مثال:
+
+```git rebase main```
+
+
+### git cherry-pick
+یک commit خاص را از یک شاخه برداشته و به شاخه فعلی منتقل می‌کند.
+ مثال:
+
+```git cherry-pick <commit-hash>
+```
+ از دستور git log --oneline --graph برای مشاهده تصویری تفاوت‌ها می توان استفاده کرد
+
+ 
+
 
 
 
