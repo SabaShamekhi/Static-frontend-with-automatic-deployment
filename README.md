@@ -14,7 +14,9 @@ Learning about the principles and concepts of project version management and usi
 - refs/ → ارجاعات به شاخه‌ها، مخازن remote و برچسب‌ها (tags)
 دستور ایجاد پوشه .git:
 
-`git init`
+```
+git init
+```
 
 این دستور یک مخزن Git جدید را مقداردهی اولیه کرده و پوشه .git را در آن ایجاد می‌کند.
 اگر در ریشه مخزن Git، دستور ls -a را اجرا کنیم، پوشه .git را میبینیم
@@ -28,7 +30,9 @@ Learning about the principles and concepts of project version management and usi
 - روش اشتباه: رفع نصف باگ در یک commit و بقیه در commit بعدی.
 مثال از دستور commit اتمی:
 
-```git commit -m "Fix login bug and update user validation"```
+```
+git commit -m "Fix login bug and update user validation"
+```
 
  ### Pull Request اتمی (Atomic Pull Request)
 - یک PR باید فقط شامل تغییرات منطقی مرتبط با یکدیگر باشد.
