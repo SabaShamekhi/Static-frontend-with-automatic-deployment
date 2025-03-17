@@ -22,13 +22,13 @@ Learning about the principles and concepts of project version management and usi
 ## ۲. منظور از اتمی بودن (Atomicity) در commit اتمی و pull-request اتمی چیست؟
 اتمی بودن یعنی یک عملیات یا به طور کامل انجام می‌شود یا اصلاً انجام نمی‌شود. این ویژگی تضمین می‌کند که هیچ تغییر ناقصی در مخزن باقی نمی‌ماند.
 ### Commit اتمی (Atomic Commit)
+
 - یک commit باید شامل تمام تغییرات مرتبط با یکدیگر باشد.
 - مثال: اگر یک باگ را رفع می‌کنید و مستندات آن را نیز به‌روزرسانی می‌کنید، هر دو باید در یک commit قرار بگیرند.
 - روش اشتباه: رفع نصف باگ در یک commit و بقیه در commit بعدی.
 مثال از دستور commit اتمی:
 
-```git commit -m "Fix login bug and update user validation"
-```
+```git commit -m "Fix login bug and update user validation"```
 
  ### Pull Request اتمی (Atomic Pull Request)
 - یک PR باید فقط شامل تغییرات منطقی مرتبط با یکدیگر باشد.
