@@ -27,7 +27,8 @@ Learning about the principles and concepts of project version management and usi
 - روش اشتباه: رفع نصف باگ در یک commit و بقیه در commit بعدی.
 مثال از دستور commit اتمی:
 
-```git commit -m "Fix login bug and update user validation"```
+```git commit -m "Fix login bug and update user validation"
+```
 
  ### Pull Request اتمی (Atomic Pull Request)
 - یک PR باید فقط شامل تغییرات منطقی مرتبط با یکدیگر باشد.
