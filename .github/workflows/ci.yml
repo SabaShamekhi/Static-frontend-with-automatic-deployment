@@ -1,0 +1,44 @@
+name: CI
+
+# Controls when the workflow will run
+on:
+  push:
+    branches:
+      - staging  # Run on push to the staging branch
+  pull_request:
+    branches:
+      - staging  # Run on PR to the staging branch
+  workflow_dispatch:  # Allow manual runs from GitHub Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use an Ubuntu runner
+
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up a simple environment
+      # You don't need Node.js, so we can skip that part
+
+      # Optional: Lint your HTML and CSS (if you have linting tools)
+      - name: Lint HTML and CSS
+        run: |
+          # Install and run linters for HTML and CSS (you can replace this with your choice of linter)
+          npm install -g htmlhint stylelint
+          htmlhint ./**/*.html
+          stylelint "**/*.css"
+
+      # Optional: Run tests if you have any (you could use visual regression testing tools or manual tests)
+      - name: Run tests
+        run: echo "No automated tests for now."
+
+      # Optional: Build project (if you have any build process, e.g., minification or pre-processing)
+      - name: Build project
+        run: echo "No build step required for pure HTML/CSS."
+
+      # Optional: Deploy the project (replace with your deployment method)
+      - name: Deploy to Production (Optional)
+        run: |
+          echo "Deploying project..."  # Replace with your deployment script if you have one
