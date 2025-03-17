@@ -1,7 +1,7 @@
 # Static-frontend-with-automatic-deployment
 Learning about the principles and concepts of project version management and using git Learning about continuous integration and deployment 
 
-#پاسخ سوالات: 
+# پاسخ سوالات: 
 
 ## ۱. پوشه .git چیست؟ چه اطلاعاتی در آن ذخیره می‌شود؟ چه دستوری برای ایجاد آن استفاده می‌شود؟
 پوشه .git یک پوشه مخفی است که Git برای پیگیری تغییرات در یک مخزن (repository) از آن استفاده می‌کند. این پوشه شامل تمام اطلاعات متادیتا (metadata)، پیکربندی‌ها و تاریخچه پروژه است.
@@ -87,6 +87,47 @@ git cherry-pick <commit-hash>
 ```
 
  از دستور git log --oneline --graph برای مشاهده تصویری تفاوت‌ها می توان استفاده کرد
+
+## ۴. تفاوت بین دستورات reset، revert، restore، switch و checkout را توضیح دهید.
+### git reset
+شاخص (pointer) شاخه را به commit قبلی بازمی‌گرداند.
+ مثال: لغو آخرین commit بدون از دست دادن تغییرات:
+
+```
+git reset --soft HEAD~1
+```
+
+### git revert
+یک commit جدید ایجاد می‌کند که اثرات یک commit قبلی را برعکس می‌کند.
+ مثال:
+
+```
+git revert <commit-hash>
+```
+
+### git restore
+فایل‌ها را از آخرین commit بازگردانی می‌کند، بدون اینکه commitهای قبلی را تغییر دهد.
+ مثال:
+
+```
+git restore index.html
+```
+
+### git switch
+تغییر شاخه به شاخه‌ای دیگر (جایگزین مدرن‌تر برای checkout).
+ مثال:
+```
+git switch feature-branch
+```
+
+### git checkout
+برای تغییر شاخه یا بازگردانی فایل‌ها استفاده می‌شود (روش قدیمی‌تر).
+ مثال:
+
+```
+git checkout main
+```
+
 
  
 
