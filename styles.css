@@ -12,3 +12,8 @@
     background-color: #fff;
     color: #222;
   }
+  
+  .map-image {
+    width: 100%;
+    filter: grayscale(100%);
+  }
