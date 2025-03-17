@@ -129,6 +129,24 @@ git checkout main
 ```
 
 
+## ۵. منظور از Stage یا Index چیست؟ دستور stash چه کاری انجام می‌دهد؟
+ناحیه Stage (یا Index)
+ناحیه‌ای است که تغییرات در آن قبل از commit شدن آماده‌سازی می‌شوند.
+ مثال:
+```
+git add index.html
+git commit -m "Update homepage"
+```
+
+### Stash
+تغییراتی که هنوز commit نشده‌اند را به‌صورت موقت ذخیره می‌کند بدون اینکه آن‌ها را commit کند.
+ مثال:
+```
+git stash
+git pull origin main
+git stash pop
+```
+می توانیم از دستور git stash list برای مشاهده لیست تغییرات stash شده استفاده کنیم.
  
 
 
