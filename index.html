@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thin Crust Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="#home">HOME</a>
+        <a href="#menu">MENU</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Header - this is for the landing section-->
+    <header class="hero" id="home">
+        <div class="hero-open">
+          <span class="tag">Open from 10am to 12pm</span>
+        </div>
+        <div class="hero-title">
+          <span class="main-title">thin<br />CRUST PIZZA</span>
+          <p>
+            <a href="#menu" class="button">Let me see the menu</a>
+          </p>
+        </div>
+      </header>
+
+      
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+        <div class="content">
+          <h1 class="section-title">THE MENU</h1>
+          <div class="menu-tabs">
+            <button onclick="openMenu(event, 'Pizza')" id="defaultOpen">Pizza</button>
+            <button onclick="openMenu(event, 'Pasta')">Salads</button>
+            <button onclick="openMenu(event, 'Starter')">Starter</button>
+          </div>
+  
+          <div id="Pizza" class="menu-items">
+            <div class="menu-item">
+              <h2>Margherita <span class="price">$12.50</span></h2>
+              <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+            </div>
+            <div class="menu-item">
+              <h2>Formaggio <span class="price">$15.50</span></h2>
+              <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+            </div>
+            <!-- Add more Pizza items similarly  -->
+          </div>
+  
+          <div id="Pasta" class="menu-items" style="display: none">
+            <div class="menu-item">
+              <h2>Lasagna <span class="label">Popular</span><span class="price">$13.50</span></h2>
+              <p>Special sauce, mozzarella, parmesan, ground beef</p>
+            </div>
+            <!-- Add Pasta items -->
+          </div>
+  
+          <div id="Starter" class="menu-items" style="display: none">
+            <div class="menu-item">
+              <h2>Bruschetta <span class="price">$8.50</span></h2>
+              <p>Bread with pesto, tomatoes, onion, garlic</p>
+            </div>
+            <!-- Add Starter items -->
+          </div>
+        </div>
+      </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+        <div class="content">
+          <h1 class="section-title">About</h1>
+          <p>The Pizza Restaurant was founded in blabla by Mr. Italiano...</p>
+          
+          <p>
+            <strong>The Chef?</strong> Mr. Italiano himself
+            <img src="images/chef.jpg" alt="Chef" class="chef-image" />
+          </p>
+          <img src="images/onepage_restaurant.jpg" alt="Restaurant" class="restaurant-image" />
+          <h2>Opening Hours</h2>
+          <div class="hours">
+            <div>
+              <p>Mon & Tue CLOSED</p>
+              <p>Wednesday 10.00 - 24.00</p>
+              <p>Thursday 10:00 - 24:00</p>
+            </div>
+            <div>
+              <p>Friday 10:00 - 12:00</p>
+              <p>Saturday 10:00 - 23:00</p>
+              <p>Sunday Closed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+    <!-- Map -->
+    <img src="images/map.jpg" alt="Map" class="map-image" id="contact" />
+
+    <!-- Contact -->
+    <section class="contact-section">
+      <div class="content">
+        <h1 class="section-title">Contact</h1>
+        <p>Find us at some address or call 05050515-122330</p>
+        <p>
+          <span class="tag">FYI!</span> We offer full-service catering for any event...
+        </p>
+        <p><strong>Reserve</strong> a table or message us:</p>
+        <form action="/action_page.php" target="_blank" class="contact-form">
+          <input type="text" placeholder="Name" name="Name" required />
+          <input type="number" placeholder="How many people" name="People" required />
+          <input type="datetime-local" name="date" required />
+          <input type="text" placeholder="Message \ Special requirements" name="Message" required />
+          <button type="submit" class="button">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+      
+          <!--footer-->
+    <footer class="footer">
+        <div>
+            <p>
+            
+                Copyright All Rights Reserved © 2025
+            </p>
+
+        </div>
+    </footer>
+      <script>
+        function openMenu(evt, menuName) {
+          const menus = document.getElementsByClassName("menu-items");
+          for (let i = 0; i < menus.length; i++) {
+            menus[i].style.display = "none";
+          }
+          document.getElementById(menuName).style.display = "block";
+        }
+        document.getElementById("defaultOpen").click();
+      </script>
+</body>    
+
+</html>

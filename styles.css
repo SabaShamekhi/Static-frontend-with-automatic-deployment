@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 35px;
+    background-color: #fff;
+    color: #222;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .navbar-inner {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+  }
+  
+  .navbar-inner a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: opacity 0.3s;
+  }
+  
+  .navbar-inner a:hover {
+    opacity: 0.6;
+  }
+
+  .hero {
+    background-image: url("images/ptwo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-open {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .hero-title .main-title {
+    color: white;
+    font-size: 100px;
+  }
+ 
+.button {
+    background: black;
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+  } 
+
+  .menu-section,
+.about-section {
+  padding: 80px 20px;
+  background-color: #000;
+}
+.contact-section {
+  padding: 80px 20px;
+  background-color: #607d8b;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 60px;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .menu-tabs button {
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid darkgrey;
+    transition: 0.3s;
+  }
+  
+  .menu-tabs button:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+.menu-items {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  
+  .menu-item {
+    margin-bottom: 32px;
+  }
+  
+  .menu-item h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .price {
+    background: #333;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+  .label {
+    background: grey;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  
+.about-section {
+    /* background-color: #f44336; */
+    background-color: #8b5f5c;
+    color: white;
+  }
+  
+  .chef-image {
+    float: right;
+    border-radius: 50%;
+    width: 200px;
+    margin-left: 20px;
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .hours {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+.map-image {
+    width: 100%;
+    filter: grayscale(100%);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-form input,
+  .contact-form button {
+    padding: 16px;
+    font-size: 18px;
+  }
+  
+  .contact-form button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tag {
+    background: #000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 18px;
+  }
+  .footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 60px;
+    padding: 1px;
+  }
+  
