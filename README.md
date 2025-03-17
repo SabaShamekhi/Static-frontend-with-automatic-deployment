@@ -42,36 +42,46 @@ Learning about the principles and concepts of project version management and usi
  کاربرد: زمانی که می‌خواهیم قبل از ادغام، تغییرات را بررسی کنیم
 مثال:
 
-```git fetch origin```
+```
+git fetch origin
+```
 
 
 ### git pull
 تغییرات را از مخزن remote دریافت و بلافاصله با شاخه فعلی ادغام می‌کند.
  معادل با:
 
-```git fetch origin
-git merge origin/main```
+```sh
+git fetch origin
+git merge origin/main
+```
+
 
 ### git merge
 یک شاخه را با شاخه دیگر ادغام می‌کند و یک commit جدید برای ادغام ایجاد می‌شود.
  مثال:
 
-```git merge feature-branch
+```
+git merge feature-branch
 ```
 
 ### git rebase
 شاخه شما را به آخرین commit از شاخه‌ای دیگر منتقل می‌کندو مزیت آن این است که تاریخچه commitها را تمیزتر نگه می‌دارد بدون کامیت ادغام
  مثال:
 
-```git rebase main```
+```
+git rebase main
+```
 
 
 ### git cherry-pick
 یک commit خاص را از یک شاخه برداشته و به شاخه فعلی منتقل می‌کند.
  مثال:
 
-```git cherry-pick <commit-hash>
 ```
+git cherry-pick <commit-hash>
+```
+
  از دستور git log --oneline --graph برای مشاهده تصویری تفاوت‌ها می توان استفاده کرد
 
  
