@@ -71,3 +71,25 @@
     display: inline-block;
     margin-top: 20px;
   } 
+
+  .menu-section,
+.about-section {
+  padding: 80px 20px;
+  background-color: #000;
+}
+.contact-section {
+  padding: 80px 20px;
+  background-color: #607d8b;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 60px;
+}
