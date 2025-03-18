@@ -71,5 +71,15 @@
           </div>
         </div>
       </section>
-  
+      <script>
+        function openMenu(evt, menuName) {
+          const menus = document.getElementsByClassName("menu-items");
+          for (let i = 0; i < menus.length; i++) {
+            menus[i].style.display = "none";
+          }
+          document.getElementById(menuName).style.display = "block";
+        }
+        document.getElementById("defaultOpen").click();
+      </script>
 </body>    
+</html>
