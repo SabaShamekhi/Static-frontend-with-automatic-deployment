@@ -38,4 +38,27 @@
   .navbar-inner a:hover {
     opacity: 0.6;
   }
-    
+
+  .hero {
+    background-image: url("images/ptwo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-open {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .hero-title .main-title {
+    color: white;
+    font-size: 100px;
+  }
+  
