@@ -115,3 +115,21 @@
     color: white;
   }
   
+.menu-items {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  
+  .menu-item {
+    margin-bottom: 32px;
+  }
+  
+  .menu-item h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36px;
+    margin: 0;
+  }
+  
