@@ -30,5 +30,46 @@
           </p>
         </div>
       </header>
- 
+
+      
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+        <div class="content">
+          <h1 class="section-title">THE MENU</h1>
+          <div class="menu-tabs">
+            <button onclick="openMenu(event, 'Pizza')" id="defaultOpen">Pizza</button>
+            <button onclick="openMenu(event, 'Pasta')">Salads</button>
+            <button onclick="openMenu(event, 'Starter')">Starter</button>
+          </div>
+  
+          <div id="Pizza" class="menu-items">
+            <div class="menu-item">
+              <h2>Margherita <span class="price">$12.50</span></h2>
+              <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+            </div>
+            <div class="menu-item">
+              <h2>Formaggio <span class="price">$15.50</span></h2>
+              <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+            </div>
+            <!-- Add more Pizza items similarly  -->
+          </div>
+  
+          <div id="Pasta" class="menu-items" style="display: none">
+            <div class="menu-item">
+              <h2>Lasagna <span class="label">Popular</span><span class="price">$13.50</span></h2>
+              <p>Special sauce, mozzarella, parmesan, ground beef</p>
+            </div>
+            <!-- Add Pasta items -->
+          </div>
+  
+          <div id="Starter" class="menu-items" style="display: none">
+            <div class="menu-item">
+              <h2>Bruschetta <span class="price">$8.50</span></h2>
+              <p>Bread with pesto, tomatoes, onion, garlic</p>
+            </div>
+            <!-- Add Starter items -->
+          </div>
+        </div>
+      </section>
+  
 </body>    
