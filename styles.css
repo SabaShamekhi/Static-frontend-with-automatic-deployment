@@ -139,4 +139,12 @@
     padding: 4px 12px;
     border-radius: 8px;
   }
-    
+  .label {
+    background: grey;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+      
