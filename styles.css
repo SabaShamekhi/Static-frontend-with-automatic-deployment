@@ -149,6 +149,28 @@
   }
 
   
+.about-section {
+    /* background-color: #f44336; */
+    background-color: #8b5f5c;
+    color: white;
+  }
+  
+  .chef-image {
+    float: right;
+    border-radius: 50%;
+    width: 200px;
+    margin-left: 20px;
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .hours {
+    display: flex;
+    justify-content: space-between;
+  }
   .footer {
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
