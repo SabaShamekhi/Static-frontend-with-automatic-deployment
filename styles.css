@@ -171,6 +171,39 @@
     display: flex;
     justify-content: space-between;
   }
+
+  
+.map-image {
+    width: 100%;
+    filter: grayscale(100%);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-form input,
+  .contact-form button {
+    padding: 16px;
+    font-size: 18px;
+  }
+  
+  .contact-form button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tag {
+    background: #000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 18px;
+  }
   .footer {
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
